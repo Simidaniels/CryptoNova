@@ -219,19 +219,19 @@ header .container .content .extra-nav .get-app:hover {
   transition: all 0.2s linear;
 }
 .to-top:hover {
-  background-color: #2bff00;
-  fill: #000;
+  background-color: #2bff0025;
+  fill: #fff;
   transition: all 0.2s linear;
 }
 .to-top.active {
   transform: scale(1);
   transition: all 0.2s linear;
 }
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .to-top{
     display: none;
   }
-}
+} */
 /* END OF TO-TOP TRANSITION */
 /* BIGINNING OF THE HERO SECTION, BACKGROUND LINE STYLES AND RESPONSIVENESS */
 /* BACKGROUND LINE */
@@ -703,9 +703,9 @@ header .container .content .extra-nav .get-app:hover {
   .starter .container .content .row .light-area {
     transform: rotate(0deg); /*  ROTATING THE LINES */
   }
-  .to-top {
+  /* .to-top {
     display: none;
-  }
+  } */
 }
 @media (max-width: 500px) {
   .starter .container .content {
@@ -1125,7 +1125,7 @@ box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff,
 .solution .container .content .row .box .text p {
   color: #c2c2c2;
   font-size: .9rem;
-  font-family: cursive;
+  font-family: "Inter", sans-serif;
   margin-bottom: 2rem;
   text-align: left;
 }
@@ -1403,7 +1403,7 @@ box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff,
 }
 .news .container .content .row .card p {
   color: #e1e1e1;
-  font: 400 15px cursive;
+  font: 400 15px "Inter", sans-serif; 
 }
 .news .container .content .row .card-2 {
   margin-top: 26px;
@@ -1506,7 +1506,7 @@ box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff,
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white);
+  color: #fff;
   width: 50%;
   border: 2px solid #6c6c6c;
   border-radius: 12px;
@@ -1539,4 +1539,142 @@ box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff,
   color: #000;
   transition: .2s linear;
 } 
+@media (max-width: 800px) {
+ .join .container .content .wrapper .wrapper-content .text {
+    width: 24em;
+    margin: 0 4rem;
+  }
+  .join .container .content .wrapper .wrapper-content .text p {
+     font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .join .container .content {
+    width: 100%; 
+  }
+  .join .container .content .wrapper {
+    height: 400px;
+  }
+  .join .container .content .wrapper .light-1, 
+  .join .container .content .wrapper .light-2
+   {
+    background: #fff;
+  }
+  
+  .join .container .content .wrapper .wrapper-content {
+    height: 90%;
+  } 
+  .join .container .content .logo img {
+    width: 4rem;
+  }
+  .join .container .content .wrapper .wrapper-content .text {
+    width: 24em;
+    margin: 0;
+  }
+  .join .container .content .wrapper .wrapper-content .text h1 {
+     font-size: 24px;
+  }
+  .join .container .content .wrapper .wrapper-content .text p {
+    font-size: 12px;
+    padding: 3em 1em; 
+  } 
+}
+footer {
+  min-height: 30vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+footer .container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 30vh;
+}
+footer .container .content .col-1, 
+footer .container .content .col-2, 
+footer .container .content .col-3, 
+footer .container .content .col-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+footer .container .content .col-1 .logo {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+footer .container .content .col-1 .logo img {
+  width: 50px;
+  height: 50px;
+}
+footer .container .content .col-1 .logo a {
+  font: bold 1.3rem "Work Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+footer .container .content .col-1 {
+  font-family: "Inter", sans-serif;
+}
+footer .container .content .col-1 .social {
+  display: flex;
+  gap: 1rem;
+}
+footer .container .content .col-1 .social a {
+  fill: #fff;
+  width: 25px;
+  height: 25px;
+}
+footer .container .content .col-1 .social .fb:hover {
+  fill: #316FF6;
+}
+footer .container .content .col-1 .social .twt:hover {
+  fill: #1DA1F2;
+}
+footer .container .content .col-1 .social .ig:hover {
+  fill: #d62976;
+}
+footer .container .content .col-1 .social .lik:hover {
+  fill: #0077B5;
+}
+footer .container .content .col-right {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+footer .container .content .col-right .col-2 p, 
+footer .container .content .col-right .col-3 p, 
+footer .container .content .col-right .col-4 p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Work Sans", sans-serif;;
+}
+footer .container .content .col-right .col-2 a, 
+footer .container .content .col-right .col-3 a, 
+footer .container .content .col-right .col-4 a {
+  text-decoration: none;
+  color: #a4a4a4;
+  font-family: "Inter", sans-serif;
+}
+footer .container .content .col-right .col-2 a:hover, 
+footer .container .content .col-right .col-3 a:hover, 
+footer .container .content .col-right .col-4 a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  footer .container .content .col-right .col-2 p, 
+  footer .container .content .col-right .col-3 p, 
+  footer .container .content .col-right .col-4 p {
+    font-size: 1.2rem;
+  }
+  footer .container .content .col-right .col-2 a, 
+  footer .container .content .col-right .col-3 a, 
+  footer .container .content .col-right .col-4 a {
+    font-size: .8rem;
+  }
+}
 
+
+/* CHECKING ERRORS TOMMORROW AND ADJUSTING */
